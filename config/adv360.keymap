@@ -42,6 +42,11 @@
 #define DE_RCBR LA(N0)        // }
 #define DE_BSLS LA(DE_SS)     // (backslash)
 
+#define DE_LABK NUBS          // <
+#define DE_RABK LS(DE_LABK)   // >
+#define DE_PIPE LA(DE_LABK)   // |
+
+
 / {
   behaviors {
     #include "macros.dtsi"
@@ -82,9 +87,9 @@
         layer_SYMBOLS {
             bindings = <
  &trans     &trans      &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans     &trans      &kp DE_LCBR &DE_RCBR    &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans     &trans      &kp DE_LCBR &kp DE_RCBR    &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans     &trans      &kp DE_LPRN &kp DE_RPRN &kp DE_SLSH &trans          &trans  &trans  &trans                  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
- &trans     &trans      &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans  &trans
+ &trans     &kp DE_PIPE &kp DE_LABK &kp DE_RABK &kp DE_LBRC &kp DE_RBRC     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans  &trans
  &trans     &trans      &trans      &trans      &trans      &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans
             >;
         };
