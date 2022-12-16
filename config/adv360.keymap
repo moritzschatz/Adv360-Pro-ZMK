@@ -42,7 +42,7 @@
 #define DE_RCBR LA(N0)        // }
 #define DE_BSLS LA(DE_SS)     // (backslash)
 
-#define DE_LABK NUBS          // <
+#define DE_LABK GRAVE         // <
 #define DE_RABK LS(DE_LABK)   // >
 #define DE_PIPE LA(DE_LABK)   // |
 
