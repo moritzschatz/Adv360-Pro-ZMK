@@ -58,8 +58,8 @@
 #define VOL_D   C_VOL_DN
 
 // screenshot macros
-#define CMD_S_4 LS(LCMD(N4))
-#define CMD_S_5 LS(LCMD(N5))
+#define CMD_S_4 LS(LG(N4))
+#define CMD_S_5 LS(LG(N5))
 
 / {
   behaviors {
