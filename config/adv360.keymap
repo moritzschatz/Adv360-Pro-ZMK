@@ -31,13 +31,13 @@
 #define DE_AE     SQT         // Ä
 #define DE_UE     LBKT        // Ü
 #define DE_SLSH   LS(N7)      // / 
+#define DE_BSLS   LA(DE_SS)   // \
 
 #define DE_LPRN LS(N8)        // (
 #define DE_RPRN LS(N9)        // )
 #define DE_EQL  LS(N0)        // =
 
 #define DE_QUES LS(DE_SS)     // ?
-/* #define DE_PLUS RBRC          // + */
 #define DE_PLUS RBKT          // +
 #define DE_ASTR LS(DE_PLUS)   // *
 #define DE_HASH NUHS          // #
@@ -79,7 +79,7 @@
         label = "TAP_DANCE_0";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        bindings = <&kp DE_BSLS>, <&kp F16>;
     };
   };
 
