@@ -37,7 +37,8 @@
 #define DE_EQL  LS(N0)        // =
 
 #define DE_QUES LS(DE_SS)     // ?
-#define DE_PLUS RBRC          // +
+/* #define DE_PLUS RBRC          // + */
+#define DE_PLUS RBKT          // +
 #define DE_ASTR LS(DE_PLUS)   // *
 #define DE_HASH NUHS          // #
 #define DE_QUOT LS(DE_HASH)   // '
