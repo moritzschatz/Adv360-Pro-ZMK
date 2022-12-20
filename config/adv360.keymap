@@ -55,7 +55,7 @@
 #define DE_PIPE LA(DE_LABK)   // |
 
 #define VOL_U   C_VOL_UP
-#define VOL_D   C_VOL_DOWN
+#define VOL_D   C_VOL_DN
 
 / {
   behaviors {
