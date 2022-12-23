@@ -24,10 +24,10 @@
 #define LA_S LA(SPACE)
 #define LCMD_ENT LCMD ENTER 
 #define LC_SEM LCTRL SEMICOLON
-#define CMD_S S LG(S)
-#define CMD_X X LG(X)
-#define CMD_C C LG(C)
-#define CMD_V V LG(V)
+#define CMD_S LG(S) S
+#define CMD_X LG(X) X
+#define CMD_C LG(C) C
+#define CMD_V LG(V) V
 
 /* german keymap */
 #define DE_SS     MINUS       // ß
