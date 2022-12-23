@@ -24,6 +24,10 @@
 #define LA_S LA(SPACE)
 #define LCMD_ENT LCMD ENTER 
 #define LC_SEM LCTRL SEMICOLON
+#define CMD_S S LG(S)
+#define CMD_X X LG(X)
+#define CMD_C C LG(C)
+#define CMD_V V LG(V)
 
 /* german keymap */
 #define DE_SS     MINUS       // ß
@@ -81,34 +85,6 @@
         tapping-term-ms = <200>;
         bindings = <&kp DE_BSLS>, <&kp F13>;
     };
-    td_c: tap_dance_1 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_1";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp C>, <&kp LG(C)>;
-    };
-    td_v: tap_dance_2 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_2";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp V>, <&kp LG(V)>;
-    };
-    td_x: tap_dance_3 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_3
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp X>, <&kp LG(X)>;
-    };
-    td_s: tap_dance_4 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_4
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp S>, <&kp LG(S)>;
-    };
   };
 
     keymap {
@@ -117,8 +93,8 @@
             bindings = <
 &kp ESC     &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp C_MUTE                                                                                                              &kp VOL_U   &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp BACKSPACE
 &kp TAB     &kp Q           &kp W           &kp E           &kp R           &kp T           &kp CMD_S_5                                                                                                             &kp VOL_D   &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSLH
-&td0        &kp A           &td_s           &kp D           &kp F           &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &kp L           &hm LC_SEM      &mo 1
-&kp LSHFT   &kp Z           &td_x           &td_c           &td_v           &kp B           &none                       &none           &kp END     &none &none     &kp PG_UP   &none                               &none       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+&td0        &kp A           &hm CMD_S       &kp D           &kp F           &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &kp L           &hm LC_SEM      &mo 1
+&kp LSHFT   &kp Z           &hm CMD_X       &hm CMD_C       &hm CMD_V       &kp B           &none                       &none           &kp END     &none &none     &kp PG_UP   &none                               &none       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
 &kp LCMD    &kp GRAVE       &kp CAPS        &kp LEFT        &kp RIGHT                                  &mt HYP_ENT      &kp BSPC        &kp DEL                     &kp LALT    &mt LCMD_ENT    &lt 2 SPACE                                     &kp UP          &kp DOWN        &kp LBKT        &kp RBKT        &kp F13
             >;
         };
