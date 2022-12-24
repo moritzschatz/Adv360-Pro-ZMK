@@ -28,6 +28,8 @@
 #define CMD_X LG(X) X
 #define CMD_C LG(C) C
 #define CMD_V LG(V) V
+#define CMD_W LG(W) W
+#define CMD_T LG(T) T
 
 /* german keymap */
 #define DE_SS     MINUS       // ß
@@ -101,9 +103,9 @@
         default_layer {
             bindings = <
 &kp ESC     &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp C_MUTE                                                                                                              &kp VOL_U   &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp BACKSPACE
-&kp TAB     &kp Q           &kp W           &kp E           &kp R           &kp T           &kp CMD_S_5                                                                                                             &kp VOL_D   &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSLH
-&td0        &kp A           &hm CMD_S       &kp D           &kp F           &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &kp L           &hm LC_SEM      &mo 1
-&kp LSHFT   &kp Z           &hm CMD_X       &hm CMD_C       &hm CMD_V       &kp B           &none                       &none           &kp END     &none &none     &kp PG_UP   &none                               &none       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+&kp TAB     &kp Q           &hm2 CMD_W      &kp E           &kp R           &hm2 CMD_T      &kp CMD_S_5                                                                                                             &kp VOL_D   &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSLH
+&td0        &kp A           &hm2 CMD_S      &kp D           &kp F           &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &kp L           &hm LC_SEM      &mo 1
+&kp LSHFT   &kp Z           &hm2 CMD_X      &hm2 CMD_C      &hm2 CMD_V      &kp B           &none                       &none           &kp END     &none &none     &kp PG_UP   &none                               &none       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
 &kp LCMD    &kp GRAVE       &kp CAPS        &kp LEFT        &kp RIGHT                                  &mt HYP_ENT      &kp BSPC        &kp DEL                     &kp LALT    &mt LCMD_ENT    &lt 2 SPACE                                     &kp UP          &kp DOWN        &kp LBKT        &kp RBKT        &kp F13
             >;
         };
@@ -114,8 +116,7 @@
  &trans     &trans          &trans          &trans          &trans          &trans          &trans                                                                                                                  &trans      &trans          &trans          &trans          &trans          &trans          &trans
  &trans     &kp DE_AE       &kp DE_SS       &kp DE_UE       &kp DE_SLSH     &kp DE_EQL      &trans                      &trans          &trans                      &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
  &trans     &trans          &trans          &trans          &trans          &trans          &trans                      &trans          &trans      &trans &trans   &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
- &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
-            >;
+ &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans >;
         };
 
         layer_SYMBOLS {
