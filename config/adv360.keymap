@@ -97,7 +97,7 @@
         tapping-term-ms = <200>;
         bindings = <&kp DE_BSLS>, <&kp F13>;
     };
-    &sl {
+    sl {
         release-after-ms = <2000>;
     };
   };
