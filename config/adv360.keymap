@@ -111,7 +111,7 @@
         tapping-term-ms = <160>;
         bindings = <&kp DE_RPRN>, <&kp DE_RCBR>;
     };
-    t3: tap_dance_3 {
+    td3: tap_dance_3 {
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE_3";
         #binding-cells = <0>;
