@@ -101,14 +101,14 @@
         compatible = "zmk,behavior-tap-dance";
         label = "normal and curly brackets";
         #binding-cells = <0>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <140>;
         bindings = <&kp DE_LPRN>, <&kp DE_LCBR>;
     };
     td2: tap_dance_2 {
         compatible = "zmk,behavior-tap-dance";
         label = "normal and curly brackets";
         #binding-cells = <0>;
-        tapping-term-ms = <300>;
+        tapping-term-ms = <140>;
         bindings = <&kp DE_RPRN>, <&kp DE_RCBR>;
     };
     sl {
