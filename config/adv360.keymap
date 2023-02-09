@@ -106,11 +106,19 @@
     };
     td2: tap_dance_2 {
         compatible = "zmk,behavior-tap-dance";
-        label = "normal and curly brackets";
+        label = "normal and curly brackets 2";
         #binding-cells = <0>;
         tapping-term-ms = <160>;
         bindings = <&kp DE_RPRN>, <&kp DE_RCBR>;
     };
+    t3: tap_dance_3 {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TAP_DANCE_3";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+    };
+
     sl {
         release-after-ms = <2000>;
     };
@@ -143,7 +151,7 @@
  &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &kp DE_QUOT     &kp DE_PLUS     &kp DE_HASH                                                                                                             &trans      &trans          &kp HOME        &kp END         &trans          &trans          &kp F12
  &trans     &kp DE_QUES     &td1            &td1            &kp DE_SLSH     &kp DE_EQL      &kp DE_ASTR                 &trans          &trans                      &trans      &trans                              &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
  &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC     &trans                      &trans          &trans      &trans &trans   &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
- &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+ &trans     &trans          &td3          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
             >;
         };
 
