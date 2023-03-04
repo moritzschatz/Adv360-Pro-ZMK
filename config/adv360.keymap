@@ -115,12 +115,12 @@
         tapping-term-ms = <190>;
         bindings = <&kp DE_RPRN>, <&kp DE_RCBR>;
     };
-    td3: tap_dance_3 {
+    f_find: tap_dance_3 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_3";
+        label = "search on double tap";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        bindings = <&kp F>, <&kp LG(F)>;
     };
 
     sl {
@@ -134,7 +134,7 @@
             bindings = <
 &kp ESC     &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp C_MUTE                                                                                                              &kp VOL_U   &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp BACKSPACE
 &kp TAB     &kp Q           &kp W           &kp E           &kp R           &hm2 CMD_T      &kp CMD_S_5                                                                                                             &kp VOL_D   &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSLH
-&sl 1       &kp A           &kp S           &kp D           &kp F           &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &hm2 CMD_L      &hm LC_SEM      &sl 1
+&sl 1       &kp A           &kp S           &kp D           &f_find         &kp G           &kp CMD_S_4                 &kp LCTRL       &kp HOME                    &kp LA_S    &kp LCMD                            &none       &kp H           &kp J           &kp K           &hm2 CMD_L      &hm LC_SEM      &sl 1
 &kp LSHFT   &kp Z           &kp X           &hm2 CMD_C      &hm2 CMD_V      &kp B           &none                       &none           &kp END     &none &none     &kp PG_UP   &none                               &none       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
 &kp LCMD    &kp GRAVE       &kp CAPS        &kp LEFT        &kp RIGHT                                  &mt HYP_ENT      &kp BSPC        &kp DEL                     &kp LALT    &mt LCMD_ENT    &lt 2 SPACE                                     &kp UP          &kp DOWN        &kp LBKT        &kp RBKT        &kp F14
             >;
