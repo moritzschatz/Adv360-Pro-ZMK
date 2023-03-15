@@ -58,9 +58,9 @@
 #define DE_RCBR RA(N0)        // }
 #define DE_BSLS RA(DE_SS)     // (backslash)
 
-#define DE_RABK GRAVE         // <
-#define DE_RABK LS(DE_RABK)   // >
-#define DE_PIPE RA(DE_RABK)   // |
+#define DE_LABK GRAVE         // <
+#define DE_RABK LS(DE_LABK)   // >
+#define DE_PIPE RA(DE_LABK)   // |
 
 #define VOL_U   C_VOL_UP
 #define VOL_D   C_VOL_DN
@@ -154,7 +154,7 @@
  &trans     &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp C_MUTE                                                                                                              &mo 4       &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
  &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &kp DE_QUOT     &kp DE_PLUS     &kp DE_HASH                                                                                                             &trans      &trans          &kp HOME        &kp END         &trans          &trans          &kp F12
  &trans     &kp DE_QUES     &open_br_1      &close_br_1     &kp DE_SLSH     &kp DE_EQL      &kp DE_ASTR                 &trans          &trans                      &trans      &trans                              &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
- &trans     &kp DE_PIPE     &kp DE_RABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC     &trans                      &trans          &trans      &trans &trans   &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
+ &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC     &trans                      &trans          &trans      &trans &trans   &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
  &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
             >;
         };
