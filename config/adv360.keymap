@@ -50,7 +50,7 @@
 #define DE_ASTR LS(DE_PLUS)   // *
 #define DE_HASH NUHS          // #
 #define DE_QUOT LS(DE_HASH)   // '
-#define DE_AT   LA(Q)         // @
+#define DE_AT   RA(Q)         // @
 
 #define DE_LCBR LA(N7)        // {
 #define DE_LBRC LA(N8)        // [
