@@ -94,7 +94,7 @@
     };
 
     // taken from: https://github.com/MoonKraken/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap
-    bhm: homerow_mods {
+    bhm: normal_hr_mod {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS3";
           #binding-cells = <2>;
