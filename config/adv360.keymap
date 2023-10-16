@@ -119,6 +119,7 @@
         require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
         hold-trigger-on-release;
+        #binding-cells = <2>;
     }; 
 
 
