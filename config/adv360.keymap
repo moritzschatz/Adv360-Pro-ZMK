@@ -114,6 +114,7 @@
     // test
     shm2: shift_hr_mod2 {
         compatible = "zmk,behavior-hold-tap";
+        label = "SHIFT_HOMEROW_MODS2";
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>; // repeat on tap-into-hold
