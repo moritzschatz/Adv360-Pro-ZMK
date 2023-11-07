@@ -190,7 +190,8 @@
                 &trans     &trans          &trans          &trans          &trans          &trans          &trans                                                                                                                  &trans      &trans          &trans          &trans          &trans          &trans          &trans
                 &trans     &kp DE_AE       &kp DE_SS       &kp DE_UE       &kp DE_BSLS     &kp DE_EQL      &trans                      &trans          &trans                      &trans      &trans                              &trans      &trans          &trans          &trans          &trans          &trans          &trans
                 &trans     &trans          &trans          &trans          &trans          &trans                                                      &trans                      &trans                                                      &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans >;
+                &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+            >;
         };
 
         layer_SYMBOLS {
