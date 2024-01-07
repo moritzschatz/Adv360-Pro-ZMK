@@ -97,7 +97,7 @@
         bindings = <&kp>, <&kp>;
     };
     
-    &sk {
+    &skq {
         quick-release;
     };
 
@@ -186,7 +186,7 @@
         combo_lshift {
             timeout-ms = <50>;
             key-positions = <29 44>; // left and right pinky on home row
-            bindings = <&sk LSHFT>;
+            bindings = <&skq LSHFT>;
         };
     };
   keymap {
