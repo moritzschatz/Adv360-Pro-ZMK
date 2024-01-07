@@ -172,8 +172,17 @@
     sl {
         release-after-ms = <2000>;
     };
+
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <29 44>; // left and right pinky on home row
+            bindings = <&sk LSHFT>;
+        };
+    };
   keymap {
     compatible = "zmk,keymap";
 
@@ -232,6 +241,5 @@
                  &none     &none           &none           &bl BL_INC      &bl BL_DEC                                  &rgb_ug RGB_TOG &bl BL_TOG      &none                       &none       &bl BL_TOG      &rgb_ug RGB_TOG                                 &bl BL_INC      &bl BL_DEC      &none           &none           &none
             >;
         };
-
   };
 };
