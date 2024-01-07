@@ -196,7 +196,7 @@
         };
         combo_lshift2 {
             timeout-ms = <50>;
-            key-positions = <31 46>; // left and right middle finger on home row
+            key-positions = <31 42>; // left and right middle finger on home row
             bindings = <&skq LSHFT>;
         };
     };
