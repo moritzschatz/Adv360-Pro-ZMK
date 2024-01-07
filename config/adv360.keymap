@@ -97,18 +97,15 @@
         bindings = <&kp>, <&kp>;
     };
 
-    skq:
-        sticky_key_quick_release
-        {
-            compatible = "zmk,behavior-sticky-key";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <1000>;
-            quick-release;
-            ignore-modifiers;
-        };
+    skq: sticky_key_quick_release {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <1000>;
+        quick-release;
+        ignore-modifiers;
+    }; 
 
-    // taken from: https://github.com/MoonKraken/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap
     bhm: normal_hr_mod {
           compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS3";
