@@ -97,7 +97,7 @@
         bindings = <&kp>, <&kp>;
     };
     
-    &skq {
+    skq {
         quick-release;
     };
 
