@@ -180,8 +180,9 @@
         //key positions: https://github.com/KinesisCorporation/Adv360-Pro-ZMK/blob/V3.0/assets/key-positions.md
 
         compatible = "zmk,combos";
-        combo_esc {
+        combo_lshift {
             timeout-ms = <50>;
+            quick-release;
             key-positions = <29 44>; // left and right pinky on home row
             bindings = <&sk LSHFT>;
         };
