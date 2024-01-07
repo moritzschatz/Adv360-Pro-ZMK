@@ -178,7 +178,6 @@
     combos {
         
         //key positions: https://github.com/KinesisCorporation/Adv360-Pro-ZMK/blob/V3.0/assets/key-positions.md
-
         compatible = "zmk,combos";
         combo_lshift {
             timeout-ms = <50>;
