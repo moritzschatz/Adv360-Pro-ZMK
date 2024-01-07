@@ -96,10 +96,17 @@
         require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
     };
-    
-    skq {
-        quick-release;
-    };
+
+    skq:
+        sticky_key_quick_release
+        {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
 
     // taken from: https://github.com/MoonKraken/Adv360-Pro-ZMK/blob/V2.0/config/adv360.keymap
     bhm: normal_hr_mod {
