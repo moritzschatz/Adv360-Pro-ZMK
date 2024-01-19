@@ -124,65 +124,6 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     }; 
-
-    // test
-    hml: hrm_left {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOME_ROW_MODS_LEFT";
-        #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>; // repeat on tap-into-hold
-        //require-prior-idle-ms = <150>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-on-release;
-    }; 
-    hmr: hrm_right {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOME_ROW_MODS_RIGHT";
-        #binding-cells = <2>;
-        flavor = "balanced";
-        tapping-term-ms = <280>;
-        quick-tap-ms = <175>; // repeat on tap-into-hold
-        //require-prior-idle-ms = <150>;
-        bindings = <&kp>, <&kp>;
-        hold-trigger-on-release;
-    }; 
-
-    // tab dances
-    td0: tap_dance_0 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TAP_DANCE_0";
-        #binding-cells = <0>;
-        tapping-term-ms = <300>;
-        bindings = <&kp DE_BSLS>, <&kp F13>;
-    };
-    open_br_1: tap_dance_1 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "open normal and curly brackets";
-        #binding-cells = <0>;
-        tapping-term-ms = <190>;
-        bindings = <&kp DE_LPRN>, <&kp DE_LCBR>;
-    };
-    close_br_1: tap_dance_2 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "close normal and curly brackets";
-        #binding-cells = <0>;
-        tapping-term-ms = <190>;
-        bindings = <&kp DE_RPRN>, <&kp DE_RCBR>;
-    };
-    f_find: tap_dance_3 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "search on double tap";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&kp F>, <&kp LG(F)>;
-    };
-
-    sl {
-        release-after-ms = <2000>;
-    };
-
     };
 
     combos {
@@ -232,7 +173,7 @@
             bindings = <
                 &trans     &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp C_MUTE                                                                                                              &mo 4       &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
                 &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &kp DE_QUOT     &kp DE_PLUS     &kp DE_HASH                                                                                                             &trans      &kp RA(BSPC)    &kp HOME        &kp END         &kp BSPC        &trans          &kp F12
-                &trans     &kp DE_QUES     &open_br_1      &close_br_1     &hml LSHIFT DE_SLSH     &kp DE_EQL      &kp DE_ASTR         &trans          &trans                      &trans      &trans                              &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
+                &trans     &kp DE_QUES     &kp DE_LPRN     &DE_RPRN        &kp DE_SLSH     &kp DE_EQL      &kp DE_ASTR         &trans          &trans                              &trans      &trans                              &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
                 &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC                                                 &trans                      &trans                                                      &trans          &trans          &trans          &trans          &trans          &trans
                 &trans     &trans          &trans          &trans          &trans                                      &trans          &trans          &trans                      &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
             >;
