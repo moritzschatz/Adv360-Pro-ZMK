@@ -126,21 +126,21 @@
     }; 
     };
 
-    combos {
+    // combos {
         
         //key positions: https://github.com/KinesisCorporation/Adv360-Pro-ZMK/blob/V3.0/assets/key-positions.md
-        compatible = "zmk,combos";
-        combo_lshift {
-            timeout-ms = <50>;
-            key-positions = <29 44>; // left and right pinky on home row
-            bindings = <&skq LSHFT>;
-        };
+        // compatible = "zmk,combos";
+        //combo_lshift {
+            //timeout-ms = <50>;
+            //key-positions = <29 44>; // left and right pinky on home row
+            //bindings = <&skq LSHFT>;
+        //};
         //combo_lshift2 {
             //timeout-ms = <50>;
             //key-positions = <31 42>; // left and right middle finger on home row
             //bindings = <&skq LSHFT>;
         //};
-    };
+    // };
 
   keymap {
     compatible = "zmk,keymap";
