@@ -1,0 +1,7 @@
+1. create pull request on github
+2. three dots / branch merge
+3. branch des pull request auswählen
+4. resolve conflicts (am besten direkt im editor, d.h. ohne "knöpfe")
+5. Sync
+6. der pull request erkennt dass es keine konflikte gibt
+7. pr akzeptieren
