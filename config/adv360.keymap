@@ -177,7 +177,7 @@
                 &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &kp DE_QUOT     &kp DE_PLUS     &kp DE_HASH                                                                                                      &trans      &kp RA(BSPC)    &kp HOME        &kp END         &kp BSPC        &trans          &kp F12
                 &trans     &kp DE_QUES     &kp DE_LPRN     &kp DE_RPRN     &kp DE_SLSH     &kp DE_EQL      &kp DE_ASTR                  &trans          &trans                  &trans      &trans                          &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
                 &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC                                                  &trans                  &trans                                                  &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &trans          &trans          &trans          &trans                                      &trans           &trans          &trans                  &trans      &trans          &trans                                      &trans          &trans          &trans          &trans          &trans
+                &trans     &trans          &trans          &trans          &trans                                      &trans           &kp LA(BSPC)    &kp LA(DEL)             &trans      &trans          &trans                                      &trans          &trans          &trans          &trans          &trans
             >;
         };
 
