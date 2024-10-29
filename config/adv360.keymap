@@ -135,6 +135,18 @@
         tapping-term-ms = <180>;
         bindings = <&kp DE_QUES>, <&kp DE_EXCL>;
     };
+    td_quot_astr: tap_dance_quot_astr {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <180>;
+        bindings = <&kp DE_QUOT>, <&kp DE_ASTR>;
+    };
+    td_plus_hash: tap_dance_plus_hash {
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
+        tapping-term-ms = <180>;
+        bindings = <&kp DE_PLUS>, <&kp DE_HASH>;
+    };
 };
 
     // combos {
@@ -172,9 +184,9 @@
             
             bindings = <
                 &trans     &trans          &trans          &trans          &trans          &trans          &trans                                                                                                           &mo 4       &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &trans          &trans          &trans          &trans          &trans          &trans                                                                                                           &trans      &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &kp DE_AE       &kp DE_SS       &kp DE_UE       &kp DE_BSLS     &kp DE_EQL      &trans                       &trans          &trans          &trans      &trans                                  &trans      &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &trans          &trans          &trans          &kp DE_ASTR     &kp DE_HASH                                                  &trans          &trans                                                          &trans          &trans          &trans          &trans          &trans          &trans
+                &trans     &trans          &trans          &trans          &kp DE_ASTR     &trans          &trans                                                                                                           &trans      &trans          &trans          &trans          &trans          &trans          &trans
+                &trans     &kp DE_AE       &kp DE_SS       &kp DE_UE       &kp DE_BSLS     &trans          &trans                       &trans          &trans          &trans      &trans                                  &trans      &trans          &trans          &trans          &trans          &trans          &trans
+                &trans     &trans          &trans          &trans          &trans          &trans                                                       &trans          &trans                                                          &trans          &trans          &trans          &trans          &trans          &trans
                 &trans     &trans          &trans          &trans          &trans                                      &trans           &trans          &trans          &trans      &trans          &trans                              &trans          &trans          &trans          &trans          &trans
             >;
         };
@@ -183,7 +195,7 @@
         layer_SYMBOLS {
             bindings = <
                 &trans     &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp C_MUTE                                                                                                       &mo 4       &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
-                &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &kp DE_QUOT     &kp DE_PLUS     &trans                                                                                                           &trans      &kp RA(BSPC)    &kp HOME        &kp END         &kp BSPC        &trans          &kp F12
+                &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &td_quot_astr   &td_plus_hash   &trans                                                                                                           &trans      &kp RA(BSPC)    &kp HOME        &kp END         &kp BSPC        &trans          &kp F12
                 &trans     &td_ques_excl   &kp DE_LPRN     &kp DE_RPRN     &kp DE_SLSH     &kp DE_EQL      &trans                       &trans          &trans          &trans      &trans                                  &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
                 &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC                                                  &trans          &trans                                                          &trans          &trans          &trans          &trans          &trans          &trans
                 &trans     &trans          &trans          &trans          &trans                                      &trans           &kp LA(BSPC)    &kp LA(DEL)     &trans      &trans          &trans                              &trans          &trans          &trans          &trans          &trans
