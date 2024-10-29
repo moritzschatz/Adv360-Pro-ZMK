@@ -23,6 +23,7 @@
 #define CMD_V LG(V) V
 #define CMD_W LG(W) W
 #define CMD_T LG(T) T
+#define CMD_TAB LG(TAB)
 
 /* german keymap */
 #define DE_SS     MINUS       // ß
@@ -198,7 +199,7 @@
                 &trans     &kp DE_AT       &kp DE_LCBR     &kp DE_RCBR     &td_quot_astr   &td_plus_hash   &trans                                                                                                           &trans      &kp RA(BSPC)    &kp HOME        &kp END         &kp BSPC        &trans          &kp F12
                 &trans     &td_ques_excl   &kp DE_LPRN     &kp DE_RPRN     &kp DE_SLSH     &kp DE_EQL      &trans                       &trans          &trans          &trans      &trans                                  &trans      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans          &trans
                 &trans     &kp DE_PIPE     &kp DE_LABK     &kp DE_RABK     &kp DE_LBRC     &kp DE_RBRC                                                  &trans          &trans                                                          &trans          &trans          &trans          &trans          &trans          &trans
-                &trans     &trans          &trans          &trans          &trans                                      &trans           &kp LA(BSPC)    &kp LA(DEL)     &trans      &trans          &trans                              &trans          &trans          &trans          &trans          &trans
+                &trans     &trans          &trans          &trans          &trans                                      &kp CMD_TAB      &kp LA(BSPC)    &kp LA(DEL)     &trans      &trans          &trans                              &trans          &trans          &trans          &trans          &trans
             >;
         };
 
