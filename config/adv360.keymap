@@ -48,11 +48,11 @@
 #define DE_AT   RA(Q)         // @
 
 //#define DE_LCBR RA(N7)      // {
-#define DE_LCBR (RALT(N7))    // {
+#define DE_LCBR RALT(N7)      // {
 #define DE_LBRC RA(N8)        // [
 #define DE_RBRC RA(N9)        // ]
 //#define DE_RCBR RA(N0)      // }
-#define DE_RCBR (RALT(N0))    // }
+#define DE_RCBR LALT(N0)      // }
 #define DE_BSLS RA(DE_SS)     // (backslash)
 
 #define DE_LABK GRAVE         // <
