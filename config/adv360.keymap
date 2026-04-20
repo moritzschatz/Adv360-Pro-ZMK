@@ -160,8 +160,8 @@ macros {
     de_lcbr: de_lcbr {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <150>;
-        tap-ms = <150>;
+        wait-ms = <50>;
+        tap-ms = <50>;
         bindings = <&macro_press &kp RALT>, 
                    <&macro_tap &kp N7>, 
                    <&macro_release &kp RALT>;
