@@ -48,6 +48,7 @@
 #define DE_AT   RA(Q)         // @
 
 #define DE_LCBR RA(N7)      // {
+//#define DE_LCBR LA(N7)      // {
 //#define DE_LCBR RALT(N7)      // {
 #define DE_LBRC RA(N8)        // [
 #define DE_RBRC RA(N9)        // ]
@@ -159,11 +160,11 @@ macros {
     de_lcbr: de_lcbr {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <50>;
-        tap-ms = <50>;
-        bindings = <&macro_press &kp RALT>, 
-                   <&macro_tap &kp N7>, 
-                   <&macro_release &kp RALT>;
+        wait-ms = <150>;
+        tap-ms = <150>;
+        bindings = <&macro_press &kp LCTRL &kp LALT>, 
+           <&macro_tap &kp N7>, 
+           <&macro_release &kp LCTRL &kp LALT>;
     };
 
     // Right Curly Brace }
