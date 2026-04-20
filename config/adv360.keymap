@@ -162,9 +162,9 @@ macros {
         #binding-cells = <0>;
         wait-ms = <150>;
         tap-ms = <150>;
-        bindings = <&macro_press &kp LCTRL &kp LALT>, 
-           <&macro_tap &kp N7>, 
-           <&macro_release &kp LCTRL &kp LALT>;
+        bindings = <&macro_press &kp RALT>, 
+                   <&macro_tap &kp N7>, 
+                   <&macro_release &kp RALT>;
     };
 
     // Right Curly Brace }
